@@ -1,0 +1,1051 @@
+{
+	"info": {
+		"_postman_id": "90adff7d-b2ed-4357-8a2b-03c75176b068",
+		"name": "thirty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Toko",
+			"item": [
+				{
+					"name": "Get Toko",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/toko",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"toko"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Toko",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_pengelola",
+									"value": "Dika",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dika@toko.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "nama_toko",
+									"value": "Toko Dika",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/home/fahmifn/Pictures/Cuplikan layar dari 2021-02-14 13-14-58.png"
+								},
+								{
+									"key": "desc_toko",
+									"value": "produsen oleh oleh khas jakarta",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "jalan raya anggrek no 123 jakarta selatan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/toko/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"toko",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Toko",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_pengelola",
+									"value": "Salim Bule",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "nama_toko",
+									"value": "Toko Bule",
+									"type": "text"
+								},
+								{
+									"key": "desc_toko",
+									"value": "toko oleh oleh khas jakarta",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/home/fahmifn/Pictures/Cuplikan layar dari 2021-04-07 22-21-43.png"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/toko/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"toko",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Toko",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/toko/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"toko",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "adam@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/login_toko",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login_toko"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/customer/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "fahmi test",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "fahmifn",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "fahmi@customer.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/home/fahmifn/Pictures/Cuplikan layar dari 2021-04-07 22-14-01.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/customer/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Sodik",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://demo.mahasiwa03.site/api/customer/7",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"mahasiwa03",
+								"site"
+							],
+							"path": [
+								"api",
+								"customer",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Customer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://demo.mahasiwa03.site/api/customer/10",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"mahasiwa03",
+								"site"
+							],
+							"path": [
+								"api",
+								"customer",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "fahmi@customer.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/login_customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login_customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ojol",
+			"item": [
+				{
+					"name": "Get Ojol",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/ojol/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ojol",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Ojol",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "adam",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "adamjr",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "adam@ojek.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "type_kendaraan",
+									"value": "motor",
+									"type": "text"
+								},
+								{
+									"key": "nama_kendaraan",
+									"value": "Honda Vario 125",
+									"type": "text"
+								},
+								{
+									"key": "warna_kendaraan",
+									"value": "hitam",
+									"type": "text"
+								},
+								{
+									"key": "nomor_kendaraan",
+									"value": "E 1234 YAB",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/home/fahmifn/Downloads/Wudhu.png"
+								},
+								{
+									"key": "photo_kendaraan",
+									"type": "file",
+									"src": "/home/fahmifn/Downloads/WhatsApp Image 2020-12-09 at 07.20.02.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/ojol/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ojol",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Ojol",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "adam",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/ojol/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ojol",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Ojol",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/ojol/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ojol",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "adam@ojek.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/login_ojol",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login_ojol"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produk",
+			"item": [
+				{
+					"name": "Get Produk",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/produk",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Produk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_toko",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nama_produk",
+									"value": "Krupuk Melarat",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "makanan khas cirebon jawa barat",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "12000",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/home/fahmifn/Pictures/Cuplikan layar dari 2021-02-14 13-14-58.png"
+								},
+								{
+									"key": "rating",
+									"value": "4.9",
+									"type": "text"
+								},
+								{
+									"key": "stok",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/produk",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Produk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_produk",
+									"value": "harum manis",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/produk/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Produk",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/produk/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get Order",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/order",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_produk",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "id_customer",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tujuan",
+									"value": "Rumah Fahmi Nuradi",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Jalan raya cigugur no 28",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-6.9206016",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "107.610112",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/order",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "Get Invoice",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/invoice",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"invoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Transaksi",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "jumlah_pesan",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "tgl_pemesanan",
+									"value": "2021-04-16",
+									"type": "text"
+								},
+								{
+									"key": "keterangan",
+									"value": "antar sampai rumah yaa...",
+									"type": "text"
+								},
+								{
+									"key": "id_delivery",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/invoice",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"invoice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pengantaran",
+			"item": [
+				{
+					"name": "Get Pengantaran",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/pengantaran",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pengantaran"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Pengantaran",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_transaksi",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "id_ojol",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/pengantaran",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pengantaran"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
